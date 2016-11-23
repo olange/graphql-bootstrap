@@ -10,7 +10,7 @@ app.use "/", \
   graphqlHTTP (request) ->
     startTime = Date.now()
     {
-      schema: schema.PoliscopeDM
+      schema: schema.MySchema
       graphiql: true
       pretty: true
       extensions: (args) ->
@@ -20,7 +20,7 @@ app.use "/", \
 
 app.listen port
 console.info """
-  Poliscope Document Model · GraphQL app server v#{version}
+  GraphQL app server v#{version}
 
   Listening on http://localhost:#{port}/
   Press CTRL-C to interrupt…

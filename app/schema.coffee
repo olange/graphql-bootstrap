@@ -6,10 +6,10 @@ graphql = require "graphql"
 
 exp = module.exports = {}
 
-exp.PoliscopeDM = new GraphQLSchema {
+exp.MySchema = new GraphQLSchema {
   query: new GraphQLObjectType {
     name: "RootQueryType"
-    description: "All queries of the Poliscope Document Model."
+    description: "All queries of My Schema."
     fields:
       hello:
         type: GraphQLString
