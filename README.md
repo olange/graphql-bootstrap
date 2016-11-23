@@ -2,7 +2,16 @@
 
 Poliscope Document Model: a quick proof-of-concept with GraphQL.
 
-To launch the server:
+## Setup
+
+```bash
+$ cd poliscope
+$ npm install
+````
+
+## Run the app server
+
+Launch the server:
 
 ```bash
 $ npm start -s
@@ -10,12 +19,14 @@ $ npm start -s
 
 Then open a browser at http://localhost:4000 and try following GraphQL query:
 
-```json
+```raw
 {
   greeting1: hello
   greeting2: hello( who: "David")
 }
 ```
+
+## License
 
 [![CC-BY-SA](http://i.creativecommons.org/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 
