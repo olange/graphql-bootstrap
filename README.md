@@ -17,12 +17,12 @@ Launch the server:
 $ npm start -s
 ```
 
-Then open a browser at http://localhost:4000 and try following GraphQL query:
+Then open a browser at http://localhost:4000 and try following [GraphQL query](http://graphql.org/learn/queries/):
 
 ```raw
-{
+query greetings {
   greeting1: hello
-  greeting2: hello( who: "David")
+  greeting2: hello( who: "You")
 }
 ```
 

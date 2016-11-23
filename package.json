@@ -12,7 +12,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "./node_modules/coffee-script/bin/coffee index.coffee --nodejs",
+    "start": "node_modules/coffee-script/bin/coffee app/index.coffee --nodejs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

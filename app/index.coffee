@@ -10,16 +10,16 @@ app.use "/", \
   graphqlHTTP (request) ->
     startTime = Date.now()
     {
-      schema: schema.PoliscopeSchema
+      schema: schema.PoliscopeDM
       graphiql: true
       pretty: true
       extensions: (args) ->
+        # { document, variables, operationName, result } = args
         { runTime: "" + (Date.now() - startTime) + " ms" }
     }
 
 app.listen port
 console.info """
-
   Poliscope Document Model · GraphQL app server v#{version}
 
   Listening on http://localhost:#{port}/
