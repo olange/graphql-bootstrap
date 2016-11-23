@@ -1,6 +1,6 @@
-# Poliscope
+# Poliscope DM
 
-Poliscope Document Model (DM): a quick proof-of-concept with GraphQL.
+Poliscope Document Model: a quick proof-of-concept with GraphQL.
 
 [![CC-BY-SA](http://i.creativecommons.org/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/)
 

@@ -1,0 +1,30 @@
+{
+  "name": "poliscope_dm",
+  "version": "1.0.0",
+  "description": "Poliscope Document Model: a quick proof-of-concept with GraphQL",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-graphql": "^0.6.1",
+    "graphql": "^0.8.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/olange/poliscope.git"
+  },
+  "keywords": [
+    "poliscope",
+    "agora",
+    "graphql"
+  ],
+  "author": "Olivier Lange",
+  "license": "CC-BY-SA-4.0",
+  "bugs": {
+    "url": "https://gitlab.com/olange/poliscope/issues"
+  },
+  "homepage": "https://gitlab.com/olange/poliscope#README"
+}
