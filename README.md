@@ -14,7 +14,14 @@ $ npm install
 Launch the server:
 
 ```bash
-$ npm start -s
+$ npm -s start
+```
+
+or alternatively, to watch the source code and restart the server on changes:
+
+
+```bash
+$ npm -s run watch
 ```
 
 Then open a browser at http://localhost:4000 and try following [GraphQL query](http://graphql.org/learn/queries/):

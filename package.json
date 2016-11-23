@@ -3,16 +3,21 @@
   "version": "1.0.0",
   "description": "Poliscope Document Model: a quick proof-of-concept with GraphQL",
   "main": "index.js",
-  "config": { "port": "4000" },
+  "config": {
+    "port": "4000"
+  },
   "dependencies": {
     "coffee-script": "^1.11.1",
     "express": "^4.14.0",
     "express-graphql": "^0.6.1",
     "graphql": "^0.8.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
   "scripts": {
     "start": "node_modules/coffee-script/bin/coffee app/index.coffee --nodejs",
+    "watch": "node node_modules/nodemon/bin/nodemon.js app/index.coffee",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
