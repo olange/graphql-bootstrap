@@ -33,11 +33,15 @@ Then open a browser at http://localhost:4000 and try following [GraphQL query](h
 
 ```raw
 query greetings {
-  greeting1: hello { text, date}
-  greeting2: hello( who: "You") { text, date}
-  byebye1: goodbye( who: "Marta"){ text, date}
+  greeting1: hello { ...msgFields }
+  greeting2: hello( who: "You") { ...msgFields }
+  byebye1: goodbye( who: "Marta"){ ...msgFields}
 }
 
+fragment msgFields on Message {
+	text
+  date
+}
 ```
 
 ## Sources
