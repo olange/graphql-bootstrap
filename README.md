@@ -1,6 +1,11 @@
 # GraphQL bootstrap
 
+
 An empty GraphQL, Express and CoffeeScript project template, to bootstrap development.
+
+This is a fork from *Olivier Lange* [GraphQL Bootstrap](https://github.com/olange/graphql-bootstrap).
+This bootstrap demonstrates how to use an executable schema.
+
 
 ## Setup
 
@@ -28,10 +33,19 @@ Then open a browser at http://localhost:4000 and try following [GraphQL query](h
 
 ```raw
 query greetings {
-  greeting1: hello
-  greeting2: hello( who: "You")
+  greeting1: hello { ...msgFields }
+  greeting2: hello( who: "You") { ...msgFields }
+  byebye1: goodbye( who: "Marta"){ ...msgFields}
+}
+
+fragment msgFields on Message {
+	text
+  date
 }
 ```
+
+## Sources
+[Apollo Stack, graphql-tools - Generate schema](http://dev.apollodata.com/tools/graphql-tools/generate-schema.html)
 
 ## License
 

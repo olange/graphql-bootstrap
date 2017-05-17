@@ -7,13 +7,14 @@
     "port": "4000"
   },
   "dependencies": {
-    "coffee-script": "^1.11.1",
-    "express": "^4.14.0",
-    "express-graphql": "^0.6.1",
-    "graphql": "^0.8.2"
+    "coffee-script": "1.12.6",
+    "express": "4.15.2",
+    "express-graphql": "0.6.5",
+    "graphql": "0.9.6",
+    "graphql-tools": "0.11.0"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "1.11.0"
   },
   "scripts": {
     "start": "node_modules/coffee-script/bin/coffee app/index.coffee --nodejs",
@@ -30,6 +31,7 @@
     "coffee"
   ],
   "author": "Olivier Lange",
+  "contributors": ["Yves Lange"],
   "license": "CC-BY-SA-4.0",
   "bugs": {
     "url": "https://github.com/olange/graphql-bootstrap/issues"
