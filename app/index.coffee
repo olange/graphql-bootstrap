@@ -1,16 +1,25 @@
 express = require "express"
 graphqlHTTP = require "express-graphql"
-schema = require "./schema"
+
 
 app = express()
 port = process.env.npm_package_config_port
 version = process.env.npm_package_version
 
+Schema = require "./schema/schema"
+Resolvers = require "./resolvers"
+{ makeExecutableSchema } = require "graphql-tools"
+
+executableSchema = makeExecutableSchema(
+  typeDefs: Schema
+  resolvers: Resolvers
+)
+
 app.use "/", \
   graphqlHTTP (request) ->
     startTime = Date.now()
     {
-      schema: schema.MySchema
+      schema: executableSchema
       graphiql: true
       pretty: true
       extensions: (args) ->
